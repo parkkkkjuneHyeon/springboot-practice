@@ -1,6 +1,7 @@
 package com.fast.properties;
 
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
@@ -8,14 +9,16 @@ import org.springframework.context.annotation.Configuration;
 //@Configuration
 // 메인에 @ConfigurationPropertiesScan을
 // 이용해서 현재 클래스 @Configuration 없이도 스캔 가능하게 만듬.
+@RequiredArgsConstructor
 
 public class MyProperties {
 
     private final String name;
 
-    public MyProperties(String name) {
-        this.name = name;
-    }
+//    public MyProperties(String name) {
+//        this.name = name;
+//    }
+
     public String getName() {
         return name;
     }

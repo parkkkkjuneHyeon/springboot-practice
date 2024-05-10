@@ -8,13 +8,12 @@ import java.util.List;
 
 @Service
 public class SortService {
-    private final Sort<String> sort;
+    private final Sort<String> sortStr;
 
-    public SortService(@Qualifier("bubbleSort") Sort<String> sort) {
-        this.sort = sort;
+    public SortService(@Qualifier("bubbleSort")Sort<String> sortStr) {
+        this.sortStr = sortStr;
     }
-
     public List<String> doSort(List<String> list) {
-        return sort.sort(list);
+        return sortStr.sort(list);
     }
 }
