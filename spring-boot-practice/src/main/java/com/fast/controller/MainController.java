@@ -20,6 +20,6 @@ public class MainController {
     @GetMapping("/")
     public String hello(@RequestParam List<String> list) {
 
-        return sortService.doSort(list).toString();
+       return sortService.doSort(list).toString();
     }
 }

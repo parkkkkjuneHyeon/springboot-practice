@@ -1,4 +1,4 @@
-package com.fast.springbootpractice;
+package com.fast;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
